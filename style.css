@@ -1,0 +1,721 @@
+@font-face {
+    font-family: cursiva;
+    src: url(./font/Caveat-VariableFont_wght.ttf);
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'cursiva';
+    color: #ffffff;
+}
+
+body {
+    background: #1A0222;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px;
+}
+
+header {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    padding: 40px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo{
+    color: #ffffff;
+    font-size: 1.5em;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: rgb(137,66,188);
+    border-radius: 5px;
+    padding: 0 10px;
+    font-size: 600;
+}
+
+header .logo:hover {
+    color: rgb(137,66,188);
+    background: #ffffff;
+    transition: 1s;
+}
+
+header .navBar {
+    position: relative;
+    display:flex
+}
+
+header .navBar li {
+    list-style: none;
+    margin-left: 30px;
+}
+
+header .navBar li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.3s;
+    font-size: 0.9em;
+    text-transform: uppercase;
+}
+
+header .navBar li a:hover {
+    border-bottom: 5px solid rgb(137,66,188);
+    padding: 2px;
+}
+
+header .navBar li ul{
+    display: none;
+}
+
+header .navBar li:hover > ul {
+    display:inline;
+    position: absolute;
+    top: 10px;
+}
+
+/*Contenido de la Web */
+.contenido {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 10px;
+    box-sizing: content-box;
+}
+
+.contenido .tituloBox {
+    position: relative;
+    max-width: 600px;
+    text-align: center;
+}
+
+.contenido .tituloBox h2{
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.contenido .tituloBox h2 span {
+    background: rgb(137,66,188);
+    color:#ffffff;
+    padding: 0 10px;
+    font-weight: 600;
+    border-radius: 20px;
+}
+
+.contenido .tituloBox p {
+    font-size: 1.8em;
+    line-height: 1.5;
+    color: #ffffff;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contenido .tituloBox a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgb(137,66,188);
+    background: #ffffff;
+    padding: 10px 20px;
+    margin-left: 30px;
+    border-radius: 20px;
+    letter-spacing: 2px;
+    transition: 0.5s;
+}
+
+.contenido .tituloBox a:hover {
+    color: #ffffff;
+    background: rgb(137,66,188);
+    transition: 0.5s;
+}
+
+.contenido .imgBox {
+    width: 700px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 50px;
+    margin-top: -50px;
+    z-index: -5;
+}
+
+.contenido .imgBox img {
+    height: 60vh;
+    border-radius: 100%;
+}
+
+.contenido .imgBox img:hover {
+    height: 80vh;
+}
+
+/* Copyright */
+
+.copyright {
+    position: absolute;
+    bottom: 30px;
+    left: 450px;
+    margin-bottom: 20px;
+    padding: 0px 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.copyright p {
+    color: #ffffff;
+    text-align: center;
+    margin-left: 100px;
+}
+
+
+/* Redes sociales */
+
+.redesSociales {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px 30px;
+    list-style: none;
+}
+
+.redesSociales li {
+    padding: 10px;
+}
+
+.redesSociales li a {
+    color:#ffffff;
+    font-size: 2.5em;
+    transition: 0.3s;
+}
+
+.redesSociales li:hover a {
+    color: rgb(45,3,74);
+}
+
+/* Pagina de CV */
+
+.cv {
+    width: 800px;
+    margin: 0 auto;
+    border-top: 3px solid purple;;
+}
+
+.cv .colUno {
+    border: 3px solid purple;
+    width: 300px;
+    padding: 0 15px;
+}
+
+.cv .colDos {
+    border: 3px solid purple;
+    width: 400px;
+    text-align: justify;
+    padding: 10px 20px;
+}
+
+.cv .colUno ul {
+    margin-left: 15px;
+}
+
+.cv .colDos ul {
+    margin-left: 15px;
+    columns: 2;
+}
+
+.cv h1 {
+    text-align: center;
+    font-size: 50px;
+}
+
+.cv h2 {
+    text-align: center;
+}
+
+/* Pagina de proyectos */
+
+.contenidoProyecto {
+    position: relative;
+    width: 1000px;
+}
+
+.contenidoProyecto .proyectos {
+        position: relative;
+        width: 100%;
+        display:flex;
+        justify-content:space-around;
+        align-items:flex-end;
+        padding: 50px;
+        margin: 0 auto;
+}
+
+.contenidoProyecto .proyectos .caja {
+    
+    position: relative;
+    width: 400px;
+    height: 400px;
+    text-align: justify;
+    padding: 10px;
+}
+
+.contenidoProyecto .proyectos .caja .pUno {
+    background-image: url(./img/UNIR-FP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.contenidoProyecto .proyectos .caja .pUno:hover {
+    background-image: url(./img/UNIR-FP.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+
+.contenidoProyecto .proyectos .caja .pDos {
+    background-image: url(./img/Arkanoid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+.contenidoProyecto .proyectos .caja .pDos:hover {
+    background-image: url(./img/Arkanoid.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+.contenidoProyecto .proyectos .caja .pTres {
+    background-image: url(./img/breaking.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100px;
+    height: 100px;
+    margin: 0px auto;
+}
+
+
+.contenidoProyecto .proyectos .caja .pTres:hover {
+    background-image: url(./img/breaking.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:contain;
+    width: 300px;
+    height: 200px;
+    margin: 0px auto;
+}
+
+/* Pagina Contacto */
+
+#formulario {
+    margin: 0px auto;
+    background-color: purple;
+    color: #FFFFCC;
+    text-align: center;
+    width: 550px;
+}
+
+.legendTitulo {
+    font-size: 50px;
+}
+
+.legendSubTitulo {
+    font-size: 40px;
+}
+
+div {
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.inputNombre {
+    margin-left: 80px;
+}
+
+.inputApellido {
+    margin-left: 80px;
+}
+
+.inputEmail {
+    margin-left: 17px;
+}
+
+textarea {
+    margin-top: 5px;
+    padding: 0px 50px;
+    font-size: 15px;
+}
+
+.inputEnviar {
+    padding: 0 50px;
+    color: rgb(137,66,188);;
+}
+
+.inputReset {
+    padding: 0 50px;
+    color: rgb(137,66,188);;
+}
+
+.adjunto {
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 992px) and (min-width: 992px){
+    
+    /*Contenido de la Web */
+    
+    .contenido .tituloBox h2{
+        font-size: 1.0em;
+    }
+    
+    
+    .contenido .tituloBox p {
+        font-size: 1.5em;
+        line-height: 1.0;
+    }
+    
+    .contenido .tituloBox a {
+        margin-left: 0px;
+    }
+      
+    .contenido .imgBox img {
+        height: 50vh;
+    }
+    
+    .contenido .imgBox img:hover {
+        height: 50vh;
+    }
+    
+    /* Copyright */
+    
+    .copyright {
+        left: 250px;
+    }
+    
+    .copyright p {
+        margin-left: 0px;
+    }
+
+    
+    .redesSociales li {
+        padding: 10px;
+    }
+    
+    .redesSociales li a {
+        font-size: 2.0em;
+    }
+
+    /* Página CV */
+
+    .cv {
+        width: 550px;
+        border-top: 2px solid purple;;
+    }
+    
+    .cv .colUno {
+        border: 2px solid purple;
+        width: 200px;
+        padding: 0 15px;
+    }
+    
+    .cv .colDos {
+        border: 3px solid purple;
+        width: 350px;
+    }
+    
+    .cv .colUno ul li {
+       font-size: 15px;
+    }
+    
+    .cv .colDos ul li {
+        font-size: 15px;
+    }
+    
+    .cv h1 {
+        font-size: 30px;
+    }
+    
+    .cv .colUno h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cv .colUno p {
+        font-size: 15px;
+    }
+
+    .cv .colDos h2 {
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+
+    .cv .colDos h3 {
+        font-size: 20px;
+    }
+
+    .cv .colDos p {
+        font-size: 18px;
+    }
+
+    /* Pagina de proyectos */
+
+    .contenidoProyecto {
+        width: 990px;
+    }
+
+    .caja p {
+        font-size: 18px;
+    }
+    
+    /* Pagina Contacto */
+
+    #formulario {
+        width: 350px;
+    }
+
+    .legendTitulo {
+        font-size: 30px;
+    }
+
+    .legendSubTitulo {
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width: 800px) and (min-width: 576px) {
+
+    header {
+        padding: 20px 30px;
+    }
+    
+    header .logo{
+        font-size: 0.7em;
+        padding: 1px 6px;
+    }
+    
+    header .navBar li {
+        margin-left: 20px;
+    }
+    
+    header .navBar li a {
+        padding: 0px;
+        transition: 0.3s;
+        font-size: 0.7em;
+    }
+
+    /*Contenido de la Web */
+
+    .contenido .tituloBox {
+        margin-top: -50px;
+    }
+
+    .contenido .tituloBox h2{
+        font-size: 1.0em;
+        width: 300px;
+        margin-left: -80px;
+    }
+    
+    
+    .contenido .tituloBox p {
+        font-size: 1.0em;
+        width: 300px;
+        padding: 0 auto;
+        margin-left: -80px;
+    }
+
+    .contenido .tituloBox a {
+        padding: 5px 10px;
+        margin-left: -80px;
+    }
+
+    .contenido .imgBox {
+        padding-right: 0px;
+        margin-top: -50px;
+        margin-left: 20px;
+    }
+
+    .contenido .imgBox img {
+        height: 45vh;
+    }
+
+    /* Copyright */
+    
+    .copyright {
+        left: 50px;
+    }
+    
+    .copyright p {
+        margin-left: 65px;
+        font-size: 15px;
+        margin-top: -80px;
+    }
+
+    .redesSociales {
+        margin-right: 45px;
+        margin-bottom: -20px;
+    }
+    
+    .redesSociales li {
+        padding: 10px;
+        margin-left: 60px;
+    }
+    
+    .redesSociales li a {
+        font-size: 2.0em;
+    }
+
+    /* Página CV */
+
+    .cv {
+        width: 550px;
+        border-top: 2px solid purple;;
+        margin-top: -30px;
+    }
+    
+    .cv .colUno {
+        border: 2px solid purple;
+        width: 200px;
+        padding: 0 15px;
+    }
+    
+    .cv .colDos {
+        border: 3px solid purple;
+        width: 350px;
+    }
+
+    .cv .colDos ul {
+        columns: 1;
+    }
+    
+    .cv .colUno ul li {
+       font-size: 15px;
+    }
+    
+    .cv .colDos ul li {
+        font-size: 15px;
+    }
+    
+    .cv h1 {
+        font-size: 30px;
+    }
+    
+    .cv .colUno h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .cv .colUno p {
+        font-size: 12px;
+    }
+
+    .cv .colDos h2 {
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+
+    .cv .colDos h3 {
+        font-size: 15px;
+    }
+
+    .cv .colDos p {
+        font-size: 12px;
+    }
+
+    /* Pagina de proyectos */
+
+    .contenidoProyecto {
+        position: relative;
+        width: 500px;
+    }
+
+    .contenidoProyecto .proyectos {
+            display:block;
+    }
+
+    .contenidoProyecto .proyectos .caja p {
+        font-size: 15px;
+    }
+
+
+    /* Pagina Contacto */
+
+    #formulario {
+        width: 350px;
+    }
+
+    .legendTitulo {
+        font-size: 30px;
+    }
+
+    .legendSubTitulo {
+        font-size: 15px;
+    }
+
+    div {
+        font-size: 12px;
+    }
+
+    .inputNombre {
+        margin-left: 55px;
+    }
+
+    .inputApellido {
+        margin-left: px;
+    }
+
+    .inputEmail {
+        margin-left: 17px;
+    }
+
+    textarea {
+        margin-top: 5px;
+        padding: 0px 50px;
+        font-size: 15px;
+    }
+
+    .inputEnviar {
+        padding: 0 50px;
+        color: rgb(137,66,188);;
+    }
+
+    .inputReset {
+        padding: 0 50px;
+        color: rgb(137,66,188);;
+    }
+
+    .adjunto {
+        margin-bottom: 20px;
+    }
+}

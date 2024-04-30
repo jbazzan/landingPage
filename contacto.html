@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+    <title>Portafolio</title>
+</head>
+<body>
+    <section>
+        <header>
+            <a href="#" class="logo">Javier Emiliano Bazzan</a>
+            <ul class="navBar">
+                <li><a href="index.html">SOBRE MI</a></li>
+                <li><a href="cv.html">CV</a></li>
+                <li><a href="proyectos.html">PROYECTOS</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </header>
+        <div class="contenido">
+            <form id="formulario" name="Formulario" method="post" action="mailto:raul.rodriguez@proeducaglobal.com">
+                <fieldset>
+                    <legend class="legendTitulo">Enviame tu proyecto!</legend>
+                    <fieldset>
+                        <legend class="legendSubTitulo">Datos personales</legend>
+                    <div><label for="nombre">Nombre:</label>
+                        <input class="inputNombre" type="text" id="nombre" spellcheck="false" required></div>
+                    <div><label for="apellidos">Apellidos:</label>
+                        <input class="inputApellido" type="text" id="apellidos" spellcheck="false" required></div>
+                    <div><label for="email">Correo electrónico:</label>
+                        <input class="inputEmail" type="email" id="email" spellcheck="false" required></div>
+                    </fieldset>
+                    <textarea name="comentarios" id="" cols="30" rows="10" placeholder="Comentarios..."></textarea>
+                    <div><input class="inputEnviar" type="submit"/>
+                    <input class="inputReset" type="reset" value="Reset"/>
+                    </div>
+                    Adjuntar Archivo: <input class="adjunto" type="file"  name="Adjuntar" accept=".pdf, .jpg, .doc" multiple/>
+                </fieldset>
+            </form>
+        </div>
+        <div class="copyright">
+            <p>&copy;Web personal creada para la materio de Lenguaje de Marcas <br> del CFGS ASIR / DAM / DAW</p>
+        </div>
+        <ul class="redesSociales">
+            <li><a href="#"><ion-icon name="mail-open-outline"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+            <li><a href="#"><ion-icon name="logo-github"></ion-icon></a></li>
+        </ul>
+    </section>
+</body>
+</html>
